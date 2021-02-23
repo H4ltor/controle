@@ -2,15 +2,24 @@
   <div class="row">
     <div class="col-xs-12">
       <h2>App Immobilier</h2>
-      <ul class="list-group">
-      <app-user *ngFor= "let user of users; let i = index"
-      [checkName]= "user.name"
-      [checkOwner]= "user.owner"
-      [checkAddress]= "user.address"
-      [checkPrice]= "user.price"
-      [index]= "i"></app-user>
 
-    </ul>
+      <form>
+        <div class="mb-3">
+          <ul class="list-group">
+            <app-user *ngFor= "let user of users; let i = index"
+            [checkName]= "user.name"
+            [checkOwner]= "user.owner"
+            [checkAddress]= "user.address"
+            [checkPrice]= "user.price"
+            [index]= "i"></app-user>
+          </ul>
+
+          
+        </div>
+        <div class="mb-3">
+        </div>
+      </form>
+
     </div>
   </div>
 </div>

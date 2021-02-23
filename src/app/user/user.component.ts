@@ -19,4 +19,8 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showOneName() {
+    this.userService.checkOneName(this.index);
+  }
+
 }

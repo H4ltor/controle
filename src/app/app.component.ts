@@ -12,12 +12,26 @@ export class AppComponent implements OnInit {
   users: any[] = [];
 
 constructor(private userService: UserService) {
-  
 
-  
 }
+
 ngOnInit() {
   this.users = this.userService.users
 }
-  
+
+showCheckName() {
+  this.userService.checkName();
+}
+
+showCheckOwner() {
+  this.userService.checkOwner();
+}
+
+showCheckAddress() {
+  this.userService.checkAddress();
+}
+
+showCheckPrice() {
+  this.userService.checkPrice();
+}
 }
